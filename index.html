@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="style.css">
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <title>Loan Calculator</title>
+</head>
+
+<body class="grey darken-4">
+   <div class="container">
+      <!-- <nav class="nav-wraper indigo">
+         <a href="#" class="brand-logo">
+            HyperLoop <>
+         </a>
+         <ul class="right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+         </ul>
+      </nav> -->
+      <div class="row">
+         <div class="col s6 m6 l6 offset-s3 offset-m3 offset-l3">
+            <div class="card">
+               <div class="card-content">
+                  <h4 class="center-align">Loan Calculator</h4>
+                  <form id="loan-form">
+
+                     <div class="input-field">
+                        <span class="prefix">₹</span>
+                        <input type="number" id="amount" min='0' placeholder="Loan Amount">
+                     </div>
+
+
+                     <div class="input-field">
+                        <span class="prefix">%</span>
+                        <input type="number" id="interest" min='0' placeholder="Interest">
+                     </div>
+
+
+                     <div class="input-field">
+                        <input type="number" id="years" min='0' placeholder="Years to Repay">
+                     </div>
+
+
+                     <div class="input-field center">
+                        <input type="submit" value="Calculate" class="btn grey darken-4 button-1">
+                     </div>
+
+                     <!-- <div class="card-image" id="loading">
+                        <img src="img/load-ani.gif">
+                     </div> -->
+<!-- <div class="" -->
+                     <div id="results" class="center">
+                        <h5>Results</h5>
+                        <div class="row">
+                           <div class="input-field">
+                              <span class="col sl2 xl2">Monthly Payment</span>
+                              <input type="number" class="x col xl10 btn validate" id="monthly-payment" disabled>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="input-field">
+                              <span class="col sl2 xl2">Total Payment</span>
+                              <input type="number" class="x col xl10 btn validate" id="total-payment" disabled>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="input-field">
+                              <span class="col sl2 xl2">Total Interest</span>
+                              <input type="number" class="x col xl10 btn validate" id="total-interest" disabled>
+                           </div>
+                        </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src='xyz.js'></script>
+</body>
+
+</html>
